@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/css_creacion.css">
+    <!-- tipo de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Indie+Flower&family=Raleway:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <!-- flaticon -->
+    <link rel="icon" href="../css/logo.png">
+    <!--Font Awesome-->     
+    <script src="https://kit.fontawesome.com/9558700994.js" crossorigin="anonymous"></script>
+    
+    <title>Creacion de cuentas</title>
+    
+</head>
+<body>
+    <header>
+        <h2>Creación de cuenta</h2>
+    </header>
+    <!-- aca lo mismo es el link para la pagina principal -->
+    <a href="./formulario_logeo_foro.html"><img src="../css/logo.png"></a> 
+    <fieldset id="fieldset">
+        <form action="" method="get" id="formulario_creacion">
+            <p class="grupo">
+                <input name="Nombre" type="text" id="nombre" >
+                <label for="nombre">Nombre y Apellido</label>
+            </p>
+            
+            <p class="grupo">
+                <input name="fecha" type="date" id="fecha" >
+                <label for="fecha">Fecha De Nacimiento</label>
+            </p>
+            
+            <p class="grupo">
+                <input name="account" type="text" id="account" >
+                <label for="account">Usuario</label>
+            </p>
+            
+            <p class="grupo">
+                <input name="mail" type="email" id="mail" >
+                <label for="mail">Correo electrónico</label>
+            </p>
+            
+            <p class="grupo">
+                <input name="password" type="password" size="10" placeholder="max 10 caracteres" id="password" >
+                <label for="password">Contraseña</label>
+            </p>
+            
+            
+            <p id="condiciones">
+                Al crear una cuenta aceptas los
+                <a href="https://store.steampowered.com/subscriber_agreement/spanish/" target="_blank">
+                    términos y condiciones
+                </a>
+            </p>
+            <p>
+                <input id="checkbox" name="terminos" type="checkbox" >
+            </p>
+            
+            <p class="grupo">
+                <a href="./formulario_logeo_foro.html">¿ya tenés una cuenta?</a>
+            </p>
+
+            <input id="button" type="submit" value="CREAR">
+            <p id="mensajeError"></p>
+        </form>
+    </fieldset>
+        
+    <footer>
+        <section>
+            <h3>
+                Encontranos en:
+            </h3>
+            <a id="instagram" class="redes" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a id="facebook" class="redes" href="https://es-la.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a id="twitter" class="redes" href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+            <p>
+                Gaming Now!
+            </p>
+            <p>
+                Copyright&copy | Gaming Now!.inc
+        </p>
+        <p>
+            <a href="https://store.steampowered.com/subscriber_agreement/spanish/" target="_blank">información legal</a>
+        </p>
+    </section>
+</footer>
+<section id="home">
+</section>
+<script src="../js/creacion.js"></script>
+
+</body>
+</html>

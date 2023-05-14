@@ -1,0 +1,153 @@
+body{
+    background-image: url("https://images2.alphacoders.com/103/1039991.jpg");
+    font-family: 'Raleway';
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+header{
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+img{
+    width: 10rem;
+    position: absolute;
+    top: 0;
+}
+
+#fieldset_logeo{
+    background: rgb(4,7,52);
+    background: radial-gradient(circle, rgba(4,7,52,1) 35%, rgba(1,10,0,1) 68%);
+    border-style: none;
+    border-radius: 20px;
+    width: 40%;
+    margin: auto;
+}
+
+#form_logeo{
+    background: none;
+    margin: 0;
+    border-style: none;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.grupo{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    background:none;
+    display: block;
+    width: 100%;
+    border-color: rgb(8, 80, 8);
+    color: aliceblue;
+}
+
+input:focus{
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+label{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 2.4rem;
+}
+
+input:focus~label{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: .9rem;
+    color: rgb(39, 237, 240);
+}
+
+
+#button{
+    position: relative;
+    left: 43%;
+    text-align: center;
+    border-radius: 6px;
+    width: auto;
+    border: none;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
+
+#button:hover{
+    background-color: rgb(176, 225, 248);
+    color: black;
+    transition: 0.25s;
+    transform: translate(2px, 2px);
+}
+
+#creacion_cuenta{
+    text-align: center;
+    margin: 6px;
+}
+
+a{
+    color: rgb(255, 230, 0);
+
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#alerta{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: aquamarine;
+    padding-top: 20px;
+}
+footer{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(42, 38, 46);
+    text-align: center;
+}
+
+.redes{
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 501px) {
+    #fieldset_logeo{
+        width: 70%;
+    }
+    img{
+        width: 6rem;
+    }
+    label{
+        font-size: .7rem;
+    }
+    #button{
+        width: 30%;
+    }
+    #creacion_cuenta{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 401px){
+    label{
+        font-size: .6rem;
+    }
+    #fieldset_logeo{
+        width: 80%;
+    }
+    
+}

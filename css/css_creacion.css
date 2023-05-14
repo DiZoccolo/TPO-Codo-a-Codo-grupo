@@ -1,0 +1,164 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+    font-family: 'Raleway';
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: auto;
+    width: auto;
+}
+
+header{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+img{
+    position: fixed;
+    top: 0;
+    width: 11rem;
+}
+
+#fieldset{
+    background: rgb(4,7,52);
+    background: radial-gradient(circle, rgba(4,7,52,1) 35%, rgba(1,10,0,1) 68%);
+    border-style: none;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+#formulario_creacion{
+    background: none;
+    margin: auto;
+}
+
+.grupo{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    margin: 0;
+    background: none;
+    display: block;
+    width: 100%;
+    border-color: rgb(8, 80, 8);
+    color: aliceblue;
+}
+
+input:focus{
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+label{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 2.4rem;
+    
+}
+
+input:focus~label{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: .9rem;
+    color: rgb(39, 237, 240);
+}
+
+
+#condiciones{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#checkbox{
+    position: relative;
+    left: 50%;
+    width: auto;
+}
+
+a{
+    color: rgb(255, 230, 0);
+    text-align: center;
+    width: auto;
+}
+
+a:hover{
+    text-decoration: none;
+    width: auto;
+}
+
+#button{
+    position: relative;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    border-radius: 6px;
+    width: auto;
+    border: none;
+    left: 49%;
+}
+
+#button:hover{
+    background-color: rgb(176, 225, 248);
+    color: black;
+    transition: 0.25s;
+    transform: translate(2px, 2px);
+}
+
+#mensajeError{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: aquamarine;
+    padding-top: 20px;
+}
+
+
+footer{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: rgb(42, 38, 46);
+    text-align: center;
+}
+
+.redes{
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 669px) {
+    #fieldset{
+        width: 80%;
+    }
+    img{
+        position: absolute;
+        width: 6rem;
+    }
+    
+}
+
+@media screen and (max-width: 521px) {
+    #fieldset{
+        width: 90%;
+    }
+    label{
+        font-size: .8rem;
+    }
+}
+/*
+font-family: 'Cinzel Decorative', cursive;   esta para los titulos
+font-family: 'Indie Flower', cursive;        esta la use para el boton
+font-family: 'Raleway', sans-serif;          esta la use para textos en general
+font-family: 'Sedgwick Ave Display', cursive;
+*/
