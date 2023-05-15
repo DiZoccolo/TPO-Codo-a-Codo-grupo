@@ -1,6 +1,5 @@
 const form = document.getElementById('formulario_creacion');
 const nombre = document.getElementById('nombre');
-const sexo = document.getElementsByName('sexo');
 const fecha = document.getElementById('fecha');
 const account = document.getElementById('account');
 const pass = document.getElementById('password');
@@ -12,21 +11,20 @@ var entrar = true;
 
 var validarNombre = function(e){
     if(nombre.value == 0){
-        alerta += 'ingresá nombre válido <br>'
+        alerta += 'Ingresá nombre <br>'
         entrar = false;
-        
     }
 };
 
 var validarFecha = function(e){
    if(fecha.value == 0){
-    alerta += 'ingresá fecha válida <br>';
+    alerta += 'Ingresá fecha válida <br>';
    }
 };
 
 var validarAccount = function(e){
     if(account.value == 0){
-        alerta += 'ingresá usuario válido <br>';
+        alerta += 'Ingresá usuario <br>';
         entrar = false;
         
     }
@@ -35,23 +33,28 @@ var validarAccount = function(e){
 var validarMail = function(e){
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
     if(!regexEmail.test(mail.value)){
-        alerta += 'ingresá mail válido <br>';
+        alerta += 'Ingresá mail válido <br>';
         entrar = false;
         
     }
 };
 
 var validarPass = function(e){
-    if(pass.value.length >10 || pass.value.length <1){
+    if(pass.value.length <1){
         entrar = false;
-        alerta += 'contraseña no válida <br>';
+        alerta += 'Ingresá contraseña <br>';
+    }else if(pass.value.length > 10){
+        entrar = false;
+        alerta += 'Contraseña muy larga <br> '
+    }else{
+
     }
 };
 
 
 var validarTerminos = function(e){
     if(form.terminos.checked == false){
-        alerta += 'debes aceptar términos y condiciones <br>';
+        alerta += 'Debes aceptar términos y condiciones <br>';
         entrar = false;
     }
 }
