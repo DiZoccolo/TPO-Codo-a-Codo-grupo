@@ -1,6 +1,6 @@
 body{
     background-image: url("https://images2.alphacoders.com/103/1039991.jpg");
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     color: aliceblue;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,13 +11,7 @@ body{
 
 header{
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
-}
-
-img{
-    width: 10rem;
-    position: absolute;
-    top: 0;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 #fieldset_logeo{
@@ -44,6 +38,7 @@ img{
 }
 
 input{
+    
     background:none;
     display: block;
     width: 100%;
@@ -106,30 +101,102 @@ a:hover{
 }
 
 #alerta{
-    width: 200px;
+    display: block;
+    width: auto;
     text-align: center;
     margin: auto;
     color: aquamarine;
     padding-top: 20px;
 }
-footer{
-    position: relative;
-    margin: 0;
+
+/* FOOTER */
+.pie-pagina{
     width: 100%;
-    background-color: rgb(42, 38, 46);
-    text-align: center;
+    background-color: #23293f;
+    height: auto;
 }
 
-.redes{
-    color: rgb(255, 255, 255);
+.pie-pagina .grupo-1{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.red-social{
+    display: flex;
+    justify-content: center;
+}
+
+.red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #a7e3ff;
+    margin-right: 10px;
+    background-color: #151822;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.red-social a:hover{
+    color: #f54fd9;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;  
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.grupo-2{
+    background-color: #151822;
+    padding: 15px 10px;
+    text-align: center;
+    color: #d1cdcf;
+    font-size: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        height: auto;
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+@media screen and (max-width: 670px){
+    figure{
+        size: 1rem;
+    }
+    
 }
 
 @media screen and (max-width: 501px) {
     #fieldset_logeo{
         width: 70%;
-    }
-    img{
-        width: 6rem;
     }
     label{
         font-size: .7rem;

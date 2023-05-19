@@ -1,6 +1,6 @@
 body{
     background-image: url("https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     color: aliceblue;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,16 +11,10 @@ body{
 }
 
 header{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     text-align: center;
     position: relative;
     color: white;
-}
-
-img{
-    position: fixed;
-    top: 0;
-    width: 11rem;
 }
 
 #fieldset{
@@ -122,15 +116,85 @@ a:hover{
     padding-top: 20px;
 }
 
+/* footer */
+.pie-pagina{
+    width: 100%;
+    background-color: #23293f;
+}
 
-footer{
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 0;
-    background-color: rgb(42, 38, 46);
+.pie-pagina .grupo-1{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.red-social{
+    display: flex;
+    justify-content: center;
+}
+
+.red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #a7e3ff;
+    margin-right: 10px;
+    background-color: #151822;
     text-align: center;
+    transition: all 300ms ease;
+}
+
+.red-social a:hover{
+    color: #f54fd9;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;  
+}
+
+figure{
+    position: static;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.grupo-2{
+    background-color: #151822;
+    padding: 15px 10px;
+    text-align: center;
+    color: #d1cdcf;
+    font-size: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
 }
 
 .redes{
@@ -156,9 +220,3 @@ footer{
         font-size: .8rem;
     }
 }
-/*
-font-family: 'Cinzel Decorative', cursive;   esta para los titulos
-font-family: 'Indie Flower', cursive;        esta la use para el boton
-font-family: 'Raleway', sans-serif;          esta la use para textos en general
-font-family: 'Sedgwick Ave Display', cursive;
-*/

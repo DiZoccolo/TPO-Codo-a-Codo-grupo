@@ -6,71 +6,41 @@ const pass = document.getElementById('password');
 const terminos = document.getElementById('checkbox');
 const mail = document.getElementById('mail');
 const error = document.getElementById('mensajeError');
-var alerta = ""
-var entrar = true;
 
-var validarNombre = function(e){
-    if(nombre.value == 0){
-        alerta += 'Ingresá nombre <br>'
-        entrar = false;
-    }
-};
-
-var validarFecha = function(e){
-   if(fecha.value == 0){
-    alerta += 'Ingresá fecha válida <br>';
-   }
-};
-
-var validarAccount = function(e){
-    if(account.value == 0){
-        alerta += 'Ingresá usuario <br>';
-        entrar = false;
-        
-    }
-};
-
-var validarMail = function(e){
+form.addEventListener("submit", e=>{
+    e.preventDefault();
+    let alerta = ""
+    let entrar = false;
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    if(nombre.value == ''){
+        alerta += 'Ingresá nombre <br>'
+        entrar = true;
+    }
+    if(fecha.value == 0){
+        alerta += 'Ingresá fecha válida <br>';
+        entrar = true;
+    }
+    if(account.value == ''){
+        alerta += 'Ingresá usuario <br>';
+        entrar = true; 
+    }
     if(!regexEmail.test(mail.value)){
         alerta += 'Ingresá mail válido <br>';
-        entrar = false;
-        
+        entrar = true;
     }
-};
-
-var validarPass = function(e){
     if(pass.value.length <1){
-        entrar = false;
         alerta += 'Ingresá contraseña <br>';
-    }else if(pass.value.length > 10){
-        entrar = false;
-        alerta += 'Contraseña muy larga <br> '
-    }else{
-
+        entrar = true;
     }
-};
-
-
-var validarTerminos = function(e){
     if(form.terminos.checked == false){
         alerta += 'Debes aceptar términos y condiciones <br>';
-        entrar = false;
+        entrar = true;
     }
-}
-
-var validarFormulario = function(e){
-    validarNombre(e);
-    validarFecha(e);
-    validarAccount(e);
-    validarMail(e);
-    validarPass(e);
-    validarTerminos(e);
-    e.preventDefault();
-    if(!entrar){
+    if(entrar){
         alert("Datos incorrectos");
         mensajeError.innerHTML = alerta;
-    };
-};
-
-form.addEventListener('submit', validarFormulario);
+    }else{
+        alert("Cuenta creada exitosamente");
+        window.location.href = '../html/formulario_logeo_foro.html';
+    }
+});
