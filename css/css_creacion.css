@@ -1,10 +1,15 @@
+html{
+    display: flex;
+}
+
 body{
-    background-image: url("https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
-    font-family: 'Raleway', sans-serif;
-    color: aliceblue;
+    background-image: url("https://wallpaperset.com/w/full/6/c/2/99021.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+    color: aliceblue;
     margin: 0;
     height: auto;
     width: auto;
@@ -22,17 +27,18 @@ header{
     background: radial-gradient(circle, rgba(4,7,52,1) 35%, rgba(1,10,0,1) 68%);
     border-style: none;
     border-radius: 20px;
-    width: 50%;
+    width: 60%;
     margin: auto;
+    display: flex;
 }
 
 #formulario_creacion{
     background: none;
     margin: auto;
+    width: 100%;
 }
 
 .grupo{
-    position: relative;
     width: 100%;
     text-align: center;
 }
@@ -81,7 +87,7 @@ input:focus~label{
 }
 
 a{
-    color: rgb(255, 230, 0);
+    color: rgb(0, 255, 0);
     text-align: center;
     width: auto;
 }
@@ -91,8 +97,12 @@ a:hover{
     width: auto;
 }
 
+.flex_boton{
+    display: flex;
+    justify-content: center;
+}
+
 #button{
-    position: relative;
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
     border-radius: 6px;
@@ -108,11 +118,12 @@ a:hover{
     transform: translate(2px, 2px);
 }
 
+
 #mensajeError{
     width: 200px;
     text-align: center;
     margin: auto;
-    color: aquamarine;
+    color: rgb(0, 255, 0);
     padding-top: 20px;
 }
 
@@ -123,8 +134,8 @@ a:hover{
 }
 
 .pie-pagina .grupo-1{
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: auto;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -154,8 +165,8 @@ a:hover{
     color: #f54fd9;
 }
 .pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,6 +178,7 @@ a:hover{
 
 figure{
     position: static;
+    width: 50%;
 }
 
 .pie-pagina .grupo-1 .box h2{
@@ -197,26 +209,12 @@ figure{
     }
 }
 
-.redes{
-    color: rgb(255, 255, 255);
-}
-
-@media screen and (max-width: 669px) {
-    #fieldset{
-        width: 80%;
-    }
-    img{
-        position: absolute;
-        width: 6rem;
-    }
-    
-}
-
-@media screen and (max-width: 521px) {
+@media screen and (max-width: 720px) {
     #fieldset{
         width: 90%;
     }
-    label{
-        font-size: .8rem;
+    img{
+        width: 6rem;
     }
+    
 }
