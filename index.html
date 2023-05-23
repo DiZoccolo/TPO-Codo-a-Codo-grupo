@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:ital,wght@0,100;1,100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
   <title>GammingNow!</title>
   <link rel="icon" href="./img/gn.jpg">
@@ -30,12 +31,12 @@
         </section>
         <section class="buscador">
 
-          <form method="get" class="form"
+          <!--<form method="get" class="form"
             action="https://store.epicgames.com/es-ES/browse?sortBy=releaseDate&sortDir=DESC&category=Game&count=40"
             target="_blank">
             <input class="place" type="search" name="q" placeholder="Busca tu juego">
             <button class="btn btn-primary" type="submit">Buscar</button>
-          </form>
+          </form>-->
           <input type="hidden">
         </section>
       </header>
@@ -45,8 +46,15 @@
     <section class="principal__container">
       <nav class="menu">
 
-        <a href="https://gamers.fandom.com/es/wiki/Categor%C3%ADa:Gamers!" class="caja" target="_blank">Categoria</a>
-        <a href="https://geekspot.com.ar/productos1/gaming/?mpage=2" class="caja" target="_blank">Plataforma</a>
+        <form method="get" class="form"
+            action="https://store.epicgames.com/es-ES/browse?sortBy=releaseDate&sortDir=DESC&category=Game&count=40"
+            target="_blank">
+            <input class="place" type="search" name="q" placeholder="Busca tu juego">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+        <a href="https://geekspot.com.ar/productos1/gaming/?mpage=2" class="caja" target="_blank">Plataforma</a><!--GET https://www.freetogame.com/api/games?platform=pc
+        -->
+        <section id="app"></section>
         <a href="#" class="caja">Foro</a>
         <a href="#" class="caja">Novedades</a>
 
