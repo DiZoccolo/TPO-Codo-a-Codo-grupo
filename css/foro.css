@@ -49,16 +49,19 @@ header {
     
 }
 
+button{
+    background-color: rgba(122, 122, 122, 0.938);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
 .buscador{
     display: flex;
     justify-self:flex-end;
     flex-flow: row wrap;
 }
-
 #buscadorBoton{
-    border-radius: 12.5rem;
+    border-radius: 400px;
     display: flex;
-    /*justify-content: flex-end;*/
 }
 
 .headerlogo{
