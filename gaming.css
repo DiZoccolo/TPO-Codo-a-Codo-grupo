@@ -53,6 +53,7 @@ p{
     padding: 0.5rem;
     font-size: 15px;
     text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .section1{
@@ -97,14 +98,11 @@ p{
 
 .mi_perfil{
     display: flex;
-    
     justify-content: flex-end;
     color: yellowgreen;
-    font-family: 'Chakra Petch', sans-serif;
     padding: 2px;
     
     }
-
 
 
 
@@ -179,8 +177,9 @@ button{
     justify-content: space-between;
 }
 .form{
-    flex-flow: colum wrap;
+    
     display: flex;
+    
     
 }
 
@@ -282,8 +281,12 @@ iframe{
     width: 100%;
     line-height: 20px;
     font-size: 18px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     text-align: center;
+}
+.p3{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 18px;
 }
 
 h4{
