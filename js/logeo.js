@@ -21,6 +21,6 @@ form.addEventListener("submit", e=>{
         alert("Datos incorrectos");
     }else{
         alert("Logeo exitoso");
-        // window.location.href = ''; ACA VA EL LINK A LA PAGINA PRINCIPAL
+        window.location.href = '../index.html';
     }
 });
